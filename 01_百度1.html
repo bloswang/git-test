@@ -3,17 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>01_百度1</title>
-  <style>
-      .box{
-        width:100px;
-        height:100px;
-        background:red;
-    }
-  </style>
 </head>
 <body>
-  <div class="box">
+  <div style={width:"100px",height:"100px",background:"red"}>
   hello world
+  </div>
+  <div>
+  <p>一年有365个日出，我送你365个祝福</p>
   </div>
 <!--
 1. 难度系数: ★★★★
@@ -45,13 +41,12 @@
 */
 /************************************************/
 console.log('----------------------------------')
-
   var a = {n: 1}
   var b = a
   a.x = a = {n: 2}
-
   console.log(a.n, b.n) // ? ?2 1
   console.log(a.x, b.x) // ? ?undefinde  2
+  
 </script>
 </body>
 </html>
