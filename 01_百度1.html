@@ -20,18 +20,12 @@
   var obj2 = obj
   obj2.n = 2
   console.log(obj.n) // ?
-
-
-
   // 预热二
   function fn1(a) {
     a.n = 3
   }
   fn1(obj)
   console.log(obj.n)  // ?
-
-
-
   // 预热三
   function fn2(a) {
     a = {n:4}
@@ -39,7 +33,6 @@
   fn2(obj)
   console.log(obj.n) // ?
 */
-
 /************************************************/
 console.log('----------------------------------')
 
@@ -47,8 +40,8 @@ console.log('----------------------------------')
   var b = a
   a.x = a = {n: 2}
 
-  console.log(a.n, b.n) // ? ?
-  console.log(a.x, b.x) // ? ?
+  console.log(a.n, b.n) // ? ?2 1
+  console.log(a.x, b.x) // ? ?undefinde  2
 </script>
 </body>
 </html>
