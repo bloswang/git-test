@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>01_百度1</title>
+</head>
+<body>
+<!--
+1. 难度系数: ★★★★
+2. 相关技术点:
+  1). 引用变量赋值
+  2). 内存分析
+  3). 函数调用传参
+  4). 运算符的优先级
+-->
+<script type="text/javascript">
+/*
+  // 预热一
+  var obj = {n: 1}
+  var obj2 = obj
+  obj2.n = 2
+  console.log(obj.n) // ?
+
+
+
+  // 预热二
+  function fn1(a) {
+    a.n = 3
+  }
+  fn1(obj)
+  console.log(obj.n)  // ?
+
+
+
+  // 预热三
+  function fn2(a) {
+    a = {n:4}
+  }
+  fn2(obj)
+  console.log(obj.n) // ?
+*/
+
+/************************************************/
+console.log('----------------------------------')
+
+  var a = {n: 1}
+  var b = a
+  a.x = a = {n: 2}
+
+  console.log(a.n, b.n) // ? ?
+  console.log(a.x, b.x) // ? ?
+</script>
+</body>
+</html>
